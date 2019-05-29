@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: zuul-service
+server:
+  port: 8888
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    product-service:
+      path: /product-service/**
+      url: http://localhost:8082/
+    organization-service:
+      path: /organization-service/**
+      url: http://localhost:8081/
+    licensing-service:
+      path: /licensing-service/**
+      url: http://localhost:8080/
+    oauth:
+      path: /oauth/**
+      url: http://localhost:8000/
