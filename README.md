@@ -5,6 +5,8 @@ docker run -d -p 6831:6831/udp -p 16686:16686 jaegertracing/all-in-one:latest
 
 En http://192.168.99.100:16686 se van a poder ver las trazas.
 
+https://opentracing.io/docs/getting-started/
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
