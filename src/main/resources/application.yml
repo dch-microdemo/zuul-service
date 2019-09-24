@@ -11,7 +11,7 @@ zuul:
       url: http://localhost:8082/
     organization-service:
       path: /organization-service/**
-      url: http://localhost:8081/
+      url: http://localhost:7081/
     licensing-service:
       path: /licensing-service/**
       url: http://localhost:8080/
